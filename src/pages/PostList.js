@@ -62,7 +62,7 @@ function PostList() {
           </div>
           <div className="bt_wrap">
             <Link to="/postwrite" className="on">
-              등록
+              글쓰기
             </Link>
             {/* <a href="#">수정</a> */}
           </div>
