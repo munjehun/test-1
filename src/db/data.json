@@ -1,26 +1,30 @@
 {
   "posts": [
     {
-      "num": 1,
+      "id": 1,
       "title": "랄랄라",
-      "writer": "문제훈",
-      "date": "2022-06-27",
-      "view": 0
+      "commentsCount": 3,
+      "userName": "문제훈",
+      "createdAt": "22/06/27",
+      "updatedAt": "22/06/28",
+      "hit": 0
     },
 
     {
-      "num": 2,
+      "id": 2,
       "title": "랄랄리라",
-      "writer": "도마뱀",
-      "date": "2022-06-27",
-      "view": 0
+      "commentsCount": 3,
+      "userName": "도마뱀",
+      "createdAt": "22/06/27",
+      "hit": 0
     },
     {
-      "num": 3,
+      "id": 3,
       "title": "랄랄루",
-      "writer": "꽃뱀",
-      "date": "2022-06-27",
-      "view": 3543
+      "commentsCount": 3,
+      "userName": "꽃뱀",
+      "createdAt": "22/06/27",
+      "hit": 3543
     }
   ]
 }

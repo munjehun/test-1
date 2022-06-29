@@ -1,8 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Comment from "../component/Comment";
+import dummy from "../db/data.json";
 
 function PostView() {
+  const params = useParams();
+  console.log("param", params);
+
   return (
     <div className="board_wrap">
       <div className="board_title">
@@ -30,7 +34,7 @@ function PostView() {
                 <dd>1</dd>
               </dl>
             </div>
-            <div className="cont">글내용</div>
+            <div className="cont">글내용 글내용 글내용</div>
           </div>
           <div>
             <Comment />

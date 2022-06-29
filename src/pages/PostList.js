@@ -21,19 +21,22 @@ function PostList() {
               <div className="post_title">제목</div>
               <div className="writer">작성자</div>
               <div className="date">작성일</div>
+              <div className="updatedDate">수정일</div>
               <div className="view">조회수</div>
             </div>
 
             {postList.map((post) => (
               // dummy.map 이 아니라 dummy.posts.map!!
               <div key={post.num}>
-                <div className="num">{post.num}</div>
+                <div className="num">{post.id}</div>
                 <div className="post_title">
-                  <Link to="/postview">{post.title}</Link>
+                  <Link to="/postlist/:id">{post.title}</Link>
+                  <span>[{post.commentsCount}]</span>
                 </div>
-                <div className="writer">{post.writer}</div>
-                <div className="date">{post.date}</div>
-                <div className="view">{post.view}</div>
+                <div className="writer">{post.userName}</div>
+                <div className="date">{post.createdAt}</div>
+                <div className="updatedDate">{post.updatedAt}</div>
+                <div className="view">{post.hit}</div>
               </div>
             ))}
           </div>
@@ -62,7 +65,7 @@ function PostList() {
           </div>
           <div className="bt_wrap">
             <Link to="/postwrite" className="on">
-              글쓰기
+              등록
             </Link>
             {/* <a href="#">수정</a> */}
           </div>
